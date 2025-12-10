@@ -1,33 +1,78 @@
-# Gemini Vision Q&A App (Streamlit + Google Gemini 2.5 Flash)
+# Image to Text Converter
 
-An interactive AI vision application built using **Google Gemini Vision models** and **Streamlit**.  
-Users upload an image and ask any question about it, and the app generates an intelligent response.
+This project converts images into readable text using Python, Streamlit, and Tesseract OCR.  
+You can upload an image, and the app will extract the text from it.
 
 ---
 
 ## Features
-- Upload & analyze images  
-- Gemini 2.5 Flash Vision model integration  
-- Multimodal input: text + image  
-- Clean UI (question appears only after image upload)  
-- Secure API key handling using `.env`  
-- Works on any system with Python + Streamlit  
+
+- Upload image files (JPG, PNG, JPEG)
+- Extract text from images using OCR
+- Simple and clean Streamlit interface
+- Easy to use for beginners
 
 ---
 
-## Tech Stack
-- **Python**
-- **Streamlit**
-- **Google Gemini API**
-- **PIL / Pillow**
-- **dotenv**
+## Technologies Used
+
+- Python
+- Streamlit
+- Pytesseract (OCR)
+- Pillow
 
 ---
 
-## Installation
+## Project Structure
 
-Clone the repository:
+Image_to_text/
+- app.py  
+- requirements.txt  
+- README.md  
 
-```bash
-git clone https://github.com/Mani8639/Image_to_text.git
-cd gemini-vision-app
+---
+
+## How to Install and Run
+
+1. Clone the project:
+  git clone https://github.com/Mani8639/Image_to_text.git
+
+  cd Image_to_text
+
+2. Install the required libraries:
+  pip install -r requirements.txt
+
+
+3. Install Tesseract OCR  
+Windows users can download it from:  
+https://github.com/UB-Mannheim/tesseract/wiki
+
+After installing, add the path inside app.py (if needed):
+  pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
+4. Run the application:
+  streamlit run app.py
+
+---
+
+## How It Works
+
+1. Run the app  
+2. Upload an image  
+3. The app reads the text from the image  
+4. The extracted text will be shown on the screen  
+
+---
+
+## Future Improvements
+
+- Support for PDF files  
+- Better text accuracy  
+- Multi-language OCR
+
+---
+
+## Author
+
+Manikanta Addala  
+GitHub: https://github.com/Mani8639
