@@ -51,7 +51,7 @@ After installing, add the path inside app.py (if needed):
   pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 4. Run the application:
-  streamlit run app.py
+ streamlit run app.py
 
 ---
 
